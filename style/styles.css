@@ -497,57 +497,7 @@ body > ul li::before {
     left: 100%;
 }
 
-/* Анимации */
-@keyframes shimmer {
-    0% { left: -100%; }
-    100% { left: 100%; }
-}
 
-@keyframes scan {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(100%); }
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-    .nav-list, #menu ul, body > div:first-of-type ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .nav-link, #menu a, body > div:first-of-type a {
-        padding: 0.8rem 1rem;
-    }
-    
-    .content, #content, body > h1:first-of-type ~ * {
-        padding: 1rem;
-    }
-    
-    .product-card {
-        width: calc(100% - 2rem);
-        margin: 1rem;
-    }
-    
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
-    
-    body > #menu + h1 {
-        width: calc(100% - 2rem);
-        margin: 1rem auto;
-    }
-    
-    body > h1 + h2,
-    body > h1 + p + h2,
-    body > h1 + p + h3,
-    body > h1 + p,
-    body > h2 + p,
-    body > h3 + p,
-    body > ul + p,
-    body > ul {
-        padding: 0 1rem;
-    }
-}
 
 
 
